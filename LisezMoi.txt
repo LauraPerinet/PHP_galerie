@@ -1,0 +1,41 @@
+La base de donnée à importée est dans le dossier db.
+
+
+La liste des fonctionnalités développées dans votre livraison et attendues dans le sujet.
+
+-> affichage_vignette([ $photos_enregistrees])
+	index.php, ligne 2
+	affiche toutes les photos enregistrée dans la collections photos de la base de donnée dans les vignettes.
+	Si la page est une modification de galerie existante, checked les vignettes des photos enregistrée dans la galerie à modifier
+	
+	
+-> affichage_liste( [$photos_enregistrees] )
+	index.php, ligne 24
+	Dans la colonne de gauche, affiche la liste des photos de la galerie à modifier si c'est une modification, sinon affiche "Aucune photo selectionnée"
+
+-> options_photos_preselectionnée( [$photos_enregistrees] )
+	Si c'est une modification de galerie, les photos enregistrées dans la galerie sont insereées en option dans un selectionnée
+
+-> verifie_selection($nom_photo_a_verifier, $photos_enregistrees)
+	Checke les input des vignettes si la photo existe dans la galerie à modifier.
+	
+-> Creation et modification d'une collection galerie 
+	fichier lib/creation_galerie.lib.php
+	Créé une nouvelle galerie ou met à jours une galerie existante dont l'id est donné en $_GET
+
+-> visualisation d'une galerie
+	ma_galerie.php
+	
+	
+	
+La liste des fonctionnalités attendues dans le sujet mais non développées par vous.
+-> Le slideshow a été téléchargé sur http://www.menucool.com
+
+La liste des fonctionnalités qui vous sont personnelles
+
+->Suppression d'une galerie	
+	lib/suppression_galerie.lib.php
+	
+	
+Pour chacune des fonctionnalités développées, son niveau de finalisation (partiel/ finalisé / fiable /bug/...)
+J'ai corrigé tous les bugs que j'ai pu trouvé, mon code me semble fonctionner et être fiable. En revanche, je pense qu'il n'est pas très bien organisé et serait un petit peu compliqué à maintenir et à faire évoluer.

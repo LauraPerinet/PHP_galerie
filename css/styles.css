@@ -1,28 +1,80 @@
-*{margin:0; padding:0; border:none; box-sizing:norder-box;}
-#global{
-width:80%;
-max-width:1300px;
-font-family:Arial, sans-serif;
-margin:0 auto;
+*{margin:0; padding:0; border:none; box-sizing:border-box;}
+a{
+	color:#777;
+	text-decoration:none;
+}
+a:hover{
+	color:#ccc;
 }
 .hidden{
 	display:none;
 }
+
+#global{
+	width:90%;
+	max-width:1900px;
+	font-family:Arial, sans-serif;
+	margin:0 auto;
+	color:#333;
+}
+
+
 #col_gauche{
-	width:25%;
+	width:20%;
 	float:left;
 }
 #col_droite{
-	width:75%;
+	width:80%;
 	float:left;
+	text-align:center;
 }
+/*-------------------------------------------------COLONNE GAUCHE */
+h1, h2{
+	margin:10px 0;
+	padding:5px;
+	border :1px solid #000;
+}
+#photos_choisies li:not(.hidden), .liste_galeries li{
+	display:block;
+}
+input[type="text"]{
+	width:100%;
+	display:block;
+	border:1px solid #000;
+	border-radius:5px;
+	padding:3px;
+	box-shadow:inset 3px 3px 1px #ccccde;
+	margin:5px 0;
+}
+input[type="submit"]{
+	width:100%;
+	padding:5px;
+	margin:5px 0;
+	background-color:#fff;
+	border:1px solid #000;
+	border-radius:5px;
+}
+input[type="submit"]:hover{
+	cursor:pointer;
+	box-shadow:3px 3px 1px #ccccde;
+	border:3px solid #000;
+}
+.ssTitre{
+	font-size:0.8em;
+	font-style:italic;
+}
+
+
+
+
+/*-------------------------------------------------COLONNE DROITE */
 li{
 	list-style-type:none;
 	display:inline;
 }
 
 .vignettes{
-	width:150px;
+	width:300px;
 	height:150px;
 	margin:5px;
 	display:inline-block;
@@ -32,8 +84,30 @@ li{
 .vignettes input{
 	position:relative;
 	bottom:-125px;
-	right:-125px;
+	right:-135px;
 	width:20px;
 	height:20px;
 	border:5px solid #aaa;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
